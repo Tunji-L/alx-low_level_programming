@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - test for positive and negative
+ * main - Entry point
  *
- * Return - 0 to end the code
+ * Return: Always 0 (Success / correct)
  */
 int main(void)
 {
@@ -19,5 +19,6 @@ int main(void)
 		printf("%d is zero\n", n);
 	else
 		printf("%d is positive\n", n);
+	/* Description -random number*/
 	return (0);
 }
