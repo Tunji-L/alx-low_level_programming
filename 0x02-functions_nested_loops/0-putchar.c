@@ -2,8 +2,7 @@
 /**
  * main - Printing _putchar
  *
- * Return - The program should return 0
- *
+ * Return: The program should return 0
  */
 
 int main(void)
@@ -16,5 +15,5 @@ int main(void)
 	for (count = 0; count < size; count++)
 		_putchar(s[count]);
 	_putchar(10);
-	return(0);
+	return (0);
 }
