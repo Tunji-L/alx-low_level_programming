@@ -8,8 +8,13 @@
 
 int main(void)
 {
-	char s[] = "_putchar\n";
+	char s[] = {95, 112, 117, 116, 99, 104, 97, 114};
+	int count, size;
 
-	write(2, s, 9);
-	return (0);
+	size = sizeof(s) / sizeof(s[0]);
+	/* size = sizeof(s) / sizeof(int)*/
+	for (count = 0; count < size; count++)
+		_putchar(s[count]);
+	_putchar(10);
+	return(0);
 }
