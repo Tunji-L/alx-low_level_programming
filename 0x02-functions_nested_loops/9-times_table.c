@@ -1,26 +1,31 @@
 #include "main.h"
 /**
+ * times_table - multiplication table from 1 to 9
  *
  */
 void times_table(void)
 {
 	int i, j, a;
-	
+
 	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0; j <= 10; j++)
+		_putchar(48);
+		for (j = 1; j <= 9; j++)
 		{
-			if (j == 10)
+			_putchar(44);
+			_putchar(32);
+			a = i * j;
+			if (a >= 9)
 			{
-				_putchar('\n');
+				_putchar(32);
+				_putchar(a + 48);
 			}
 			else
 			{
-				a = i * j;
-				_putchar(a + '0');
-				_putchar(32);
-				_putchar(32);
+				_putchar((a / 10) + 48);
+				_putchar((a % 10) + 48);
 			}
 		}
 	}
+
 }
