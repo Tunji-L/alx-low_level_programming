@@ -9,24 +9,27 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	int i, j, k, l, m1, m2;
 
-	for (i = 0; i < 10; i++)
+	for (i = 48; i < 58; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = 48; j < 58; j++)
 		{
-			for (k = 0; k < 10; k++)
+			for (k = 48; k < 58; k++)
 			{
-				for (l = 1; l < 10; l++)
+				for (l = 48; l < 58; l++)
 				{
-					if (i <= k && j < l)
+					m1 = ((i * 10) + j);
+					m2 = ((k * 10) + l);
+
+					if (m1 < m2)
 					{
-						putchar(i + '0');
-						putchar(j + '0');
+						putchar(i);
+						putchar(j);
 						putchar(32);
-						putchar(k + '0');
-						putchar(l + '0');
-						if (i == 9 && j == 8 && k == 9 && l == 9)
+						putchar(k);
+						putchar(l);
+						if (i == 57 && j == 56 && k == 57 && l == 57)
 						{
 							break;
 						}
