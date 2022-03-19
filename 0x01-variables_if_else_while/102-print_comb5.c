@@ -21,23 +21,17 @@ int main(void)
 				{
 					m1 = ((i * 10) + j);
 					m2 = ((k * 10) + l);
-
 					if (m1 < m2)
 					{
-						putchar(i);
-						putchar(j);
-						putchar(32);
-						putchar(k);
-						putchar(l);
-						if (i == 57 && j == 56 && k == 57 && l == 57)
-						{
-							break;
-						}
-						else
-						{
-						putchar(44);
-						putchar(32);
-						}
+					putchar(i);
+					putchar(j);
+					putchar(32);
+					putchar(k);
+					putchar(l);
+					if (i == 57 && j == 56 && k == 57 && l == 57)
+						break;
+					putchar(44);
+					putchar(32);
 					}
 				}
 			}
