@@ -10,6 +10,7 @@ void print_rev(char *s)
 	len = 0;
 	while (s[len] != '\0')
 		len++;
+	len = len - 1;
 	while (len >= 0)
 	{
 		_putchar(s[len]);
