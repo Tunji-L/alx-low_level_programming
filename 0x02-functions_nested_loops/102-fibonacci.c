@@ -9,7 +9,7 @@ int main(void)
 	long int next, first = 1, second = 2;
 
 	printf("%lu, %lu", first, second);
-	for (count = 2; count <= 50; count++)
+	for (count = 3; count <= 50; count++)
 	{
 		next = first + second;
 		printf(", %lu", next);
