@@ -17,7 +17,7 @@ void print_times_table(int n)
 				_putchar(44);
 				_putchar(32);
 				a = i * j;
-				if (a <= 9) 
+				if (a <= 9)
 				{
 					_putchar(32);
 					_putchar(32);
