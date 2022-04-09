@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	int j;
+	long int j;
 	long int i = 612852475143;
 
 	while (i > 1)
@@ -19,7 +19,7 @@ int main(void)
 			}
 		}
 	}
-	printf("%d ", j);
+	printf("%ld ", j);
 	printf("\n");
 	return (0);
 }
