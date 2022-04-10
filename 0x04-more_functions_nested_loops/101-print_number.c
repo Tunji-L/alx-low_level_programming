@@ -32,5 +32,4 @@ void print_number(int n)
 		_putchar((l % 10) + '0');
 		count--;
 	}
-	_putchar('\n');
 }
