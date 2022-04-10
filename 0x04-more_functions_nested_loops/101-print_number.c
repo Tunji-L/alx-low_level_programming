@@ -6,7 +6,8 @@
  */
 void print_number(int n)
 {
-	int count, i, j, k, l;
+	int count, i, j;
+	unsigned int l, k;
 
 	if (n < 0)
 	{
