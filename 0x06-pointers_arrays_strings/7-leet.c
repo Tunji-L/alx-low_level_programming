@@ -6,21 +6,19 @@
  */
 char *leet(char *str)
 {
-	int i, j, k;
+	int i, k;
 	char U[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	char N[] = {'4', '3', '0', '7', '1'};
 
 	i = 0;
 	while (str[i] != '\0')
-		i++;
-
-	for (j = 0; j < i; j++)
 	{
 		for (k = 0; k < 10; k++)
 		{
-			if (str[j] == U[k])
-				str[j] = N[k / 2];
+			if (str[i] == U[k])
+				str[i] = N[k / 2];
 		}
+		i++;
 	}
 	return (str);
 }
