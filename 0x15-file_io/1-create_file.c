@@ -9,18 +9,21 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int fd, r;
+	int fd, r, n;
 
 	if (!filename)
 		return (-1);
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-	if (fd < 0)
+	if (fd == -1)
 		return (-1);
+
+	for (n = 0; text_content[n] != '\0'; n++)
+		;
 
 	if (!text_content)
 		text_content = "";
-	r = write(fd, text_content, (sizeof(text_content) - 2));
-	if (r < 0)
+	r = write(fd, text_content, n);
+	if (r == -1)
 		return (-1);
 	close(fd);
 
